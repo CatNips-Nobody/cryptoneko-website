@@ -1,0 +1,112 @@
+body {
+	
+  background-color:rgb(3, 12, 25);
+
+}
+
+section {
+  margin: 20px 0px 20px 0px;
+  background-color:rgb(3, 13, 25);
+
+}
+
+.info-text {
+  font-size: 1.1em;
+
+}
+
+.btn-CryptomyNeko{
+  background-color :rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  font-size: 28px;
+
+}
+
+.btn-BackCryptomyNeko{
+  background-color :rgb(0, 0, 0);
+  color:rgb(255, 255, 255)
+
+}
+
+.story-text {
+  margin: 0px 20px 0px 20px;
+  text-align: center;
+
+}
+
+.full-width {
+  width: 100%;
+
+}
+
+
+
+.carousel .carousel-item img {
+  width: 500px;
+
+}
+@font-face {font-family:"VP Pixel Simplified";
+    src:url("/font/VPPixel-Simplified.eot?") format("eot"),url("/font/VPPixel-Simplified.woff") format("woff"),url("/font/VPPixel-Simplified.ttf") format("truetype"),url("/font/VPPixel-Simplified.svg#VPPixel-Simplified") format("svg");font-weight:normal;font-style:normal;}
+
+
+.button {
+  background-color: rgb(3, 13, 25);
+  border-color: rgb(255, 233, 211);
+  color: rgb(255, 233, 211);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family:'VP Pixel Simplified', 'Consolas', 'Monaco';
+}
+
+
+
+.alert{
+
+  font-family:'VP Pixel Simplified','Consolas', 'Monaco';
+}
+
+p {
+  font-family:'VP Pixel Simplified','Consolas', 'Monaco';
+  color: rgb(255, 233, 211);
+
+}
+
+button {
+  font-family:'VP Pixel Simplified','Consolas', 'Monaco';
+  
+}
+h4
+{
+ font-family:'VP Pixel Simplified','Consolas', 'Monaco';
+ color: rgb(255, 225, 176);
+} 
+
+.text-link{
+  font-family:'VP Pixel Simplified','Consolas', 'Monaco';
+  color :white;
+}
+
+.button-section {
+  background-color:rgb(0, 0, 0);
+}
+
+.button-text {
+  margin: 40px 40px 40px 40px;
+}
+                    
+.card-nft {
+  margin: 2.5px 2.5px 2.5px 2.5px;
+}
+
+.datecounter {
+  background-color :rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+}
+
+a {
+  color:rgb(255, 247, 123);
+}

@@ -1,0 +1,449 @@
+<html>
+
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TV5KVMZ');</script>
+  <!-- End Google Tag Manager -->
+  
+  <meta charset="UTF-8">
+  <title>CryptoNeko</title>
+  <link rel="icon" type="image/png" href="/images/cryptoneko-favicon64.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/metamask.css" type="text/css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PLL65F2EB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+   gtag('config', 'G-5PLL65F2EB');
+  </script>
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV5KVMZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <main class = "container-fluid">
+    <section>
+      <div class="row container-fluid">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 text-left">
+       </div>
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8  text-right">
+         
+        </div>
+  
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+          <div id="enableEthereumButton" style="display:block;">
+          <img src="images/cryptoneko metamask button.png" id ="imgmetamask" alt="Responsive image" > 
+          </div>
+          <button class="button" id="getAccountsResult" style="display:none;"></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="datecounter"></div>
+    </section>
+
+    <section>
+      <div id="web3check" style="display:none;">
+        <div class="alert text-center web3check"> 
+          <button class="button btn-block" onclick="window.open('https://metamask.io/download.html','_blank')">
+            Buying NFT for the first time? Change monies to ETH and store in Metamask</button>   
+      </div> 
+    </div>  
+    </section>
+    
+    <section>
+      <div id="chaincheck" style="display:none;">
+        <div class="alert text-center chaincheck"> 
+          <button class="button btn-block" >
+            Currently not connected. Please Switch to Eth Mainnet</button>   
+      </div> 
+    </div>  
+    </section>
+
+
+    <section>
+      <div class ="container-fluid" id ="divcover" style="display:block;">
+        <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-3">   </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">   <img src="images/cryptoneko-lick-color1000.gif" id ="imgconver" class="img-fluid mx-auto d-block"  alt="Responsive image" > </div>
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-3">   </div>
+       
+      </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">   </div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 text-center">  <img src="images/cryptoneko icon IG.png" id ="btninstagram" class="img-fluid" onclick="window.open('https://www.instagram.com/cryptoneko_nft/', '_blank');">     </div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 text-center">  <img src="images/cryptoneko icon discord.png" id ="btndiscord" class="img-fluid" onclick="window.open('https://discord.gg/8ZhNyt4ZQE', '_blank');"> </div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 text-center">  <img src="images/cryptoneko icon twitter.png" id ="btntwitter" class="img-fluid" onclick="window.open('https://twitter.com/cryptoneko_nft/', '_blank');"> </div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 text-center">  <img src="images/cryptoneko icon opensea.png" id ="btnopensea" class="img-fluid" onclick="window.open('https://opensea.io/collection/cryptoneko-v2', '_blank');"></div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">   </div>
+        </div>
+        </div>
+      </br>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <p class="info-text text-break" id="showaddress"></p>
+        <p class="info-text text-break" id="showbalance"></p>
+        <p class="info-text text-break" id="showtotalsupply"></p>
+        <p class="info-text text-break" id="showprice"></p>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <p class="info-text text-break text-center" id="txtmint"></p>
+          <img src="images/push button med.png" class="img-fluid mx-auto d-block"  id="btnmintcatneko" alt="Responsive image"></img>
+         
+    
+          </br>
+          <div class = "text-center">
+          <p class="info-text text-break" id="txttx">push to buy</p>
+          <P style="font-weight: bold;color: rgb(58, 120, 192); font-size: 24px;"><span id="numremaining"> </span> / 64 remaining</P>
+          <P style="font-weight: bold;color: rgb(11, 184, 147); font-size: 24px;">Price: 0.08 ETH</P>
+          <button class="btn aqua-gradient btn-lg" onclick="window.open('https://opensea.io/collection/cryptoneko-v2','_blank')" >
+            View Sold On Opensea</button>
+
+        </div>
+      </div>
+    </div>
+    </br>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-4">
+         <div id = "tokenImg">
+         </div>
+    </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-8">
+            <p class="info-text text-break" id="txtcontractaddress"></p>
+            <p class="info-text text-break" id="txthash"></p>
+            <p class="info-text text-break" id="txtokenid"></p>
+            <p class="info-text text-break" id="txttokenuri"></p>
+            <p class="info-text text-break" id="txtopensea"></p>
+       </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section>
+
+      <div class ="container-fluid" style="display:block;">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+          <img src="images/cryptoneko project button.png"  id ="imgcryptoproject" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>  
+
+        <div id ="divcryptoproject" style="display:none;">
+        <img src="images/cryptoneko project info.jpg" class="img-fluid mx-auto d-block" >
+      </div>
+  
+    </section>
+
+
+
+    <section>
+
+      <div class ="container-fluid" style="display:block;">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+          <img src="images/cryptoneko giveaways button.png"  id ="imgcryptogive" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>  
+
+        <div id ="divimgcryptogive" style="display:none;">
+        </br>  
+        <img src="images/cryptoneko comic reward SETS.jpg" class="img-fluid mx-auto d-block" >
+      </div>
+  
+    </section>
+
+
+    <section>
+      <div class ="container-fluid" >
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+          <img src="images/cryptoneko token flip button.png" id ="imgcryptoflip" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>  
+      <div id ="divcryptoflip"  style="display:none;">
+        <div class="row">
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
+          <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
+          </br>
+          <p>Every Cryptoneko NFT is a flipping token! The function becomes available once you see  it here. It will also be announced via social media. No extra fee. No gas! Just flip!</p>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="carousel slide" data-ride="carousel" id="carousel-demo">
+             <ol class="carousel-indicators">
+               <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-demo" data-slide-to="1"></li>
+               <li data-target="#carousel-demo" data-slide-to="2"></li>
+             </ol>
+           <div class="carousel-inner">
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/01-cryptoneko-contact.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/01-cryptoneko-contact.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/05-cryptoneko-toast.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/05-cryptoneko-toast.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/11-cryptoneko-aviator.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/11-cryptoneko-aviator.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/13-cryptoneko-justbeneaththesurface.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/13-cryptoneko-justbeneaththesurface.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/14-cryptoneko-purrsistenceofmemory.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/14-cryptoneko-purrsistenceofmemory.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/15-cryptoneko-catcus.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/15-cryptoneko-catcus.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/16-cryptoneko-upperwhole.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/16-cryptoneko-upperwhole.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/17-cryptoneko-thisisknotapretzel.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/17-cryptoneko-thisisknotapretzel.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/18-cryptoneko-2peasinapod.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/18-cryptoneko-2peasinapod.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/21-cryptoneko-yo.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/21-cryptoneko-yo.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/22-cryptoneko-soundmind.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/22-cryptoneko-soundmind.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/24-cryptoneko-inside.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/24-cryptoneko-inside.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item active">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/25-cryptoneko-11-7.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/25-cryptoneko-11-7.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/26-cryptoneko-TP.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/26-cryptoneko-TP.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/27-cryptoneko-flowerpower.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/27-cryptoneko-flowerpower.gif" alt="">  </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+              <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/org/28-cryptoneko-friend.gif" alt="">  </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+               <img class="d-block  w-100 text-right" src="images/flip/28-cryptoneko-friend.gif" alt="">  </div>
+               </div>
+             </div>
+
+             <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+             </a>
+             <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+               <span class="carousel-control-next-icon"></span>
+             </a>
+           </div>
+         </div>
+        </br>
+          <p class="info-text text-break text-center" style="font-size: 26px; color: rgb(254, 205, 129);">
+            If you see your NFT above, your token is flippable!</p>
+     </div>
+    </section>
+
+      
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"></div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+             <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: rgb(91, 226, 215);">Token ID</span>
+            </div>
+            <input type="text" class="form-control" id="tokenId" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            
+          </div>
+          <p class="info-text text-break text-center"> Token Flip your NFT</p>
+          <p class="info-text text-break text-center"> 1. Connect Metamask </p>
+          <p class="info-text text-break text-center">2. Find your Token ID (OpenSea > Details > Chain Info > Token ID) </p>
+          <p class="info-text text-break text-center">3. Enter Above and hit Box Below </p>
+          <img src="images/cryptoneko tesseract x.png" class="img-fluid mx-auto d-block"  id="btnchange"></img>
+          <p class="info-text text-break text-center" id="txtaddress"></p>
+        </div>
+       
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"></div>
+        </div>
+  
+        <div class="row">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"> </div>
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 text-center" id = "tokenImg3"> </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"> </div>
+      </div>
+
+      <p class="info-text text-break text-center" id="txtchange"></p>
+
+  </br>
+      </div>
+    </section>
+  
+  
+
+
+    <section class ="button-section">
+      <div class="row container-fluid">
+        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
+          <div style = "margin: 20px 20px 20px 20px;"> 
+            <img src="images/pixel-admz.gif" style="width: 200px;" alt="Responsive image">
+          </div>
+        </div>
+        <div class="col-xl-10 col-lg-8 col-md-8 col-sm-8 col-8">
+          <br> 
+          <br><br>
+          <img src="images/etherscan-logo-big.png" height = "35" alt="Responsive image" onclick="window.open('https://etherscan.io/address/0x91c59C0d28eAab5dAa7c78B428a1065f9D0fe9a0', '_blank');">   
+          <br><br> 
+          <p id = "txtaboutus" class="info-text text-break"  style="font-weight:bold;font-size:18px;color: rgb(205, 64,181);text-decoration: underline;">who are we?</p> 
+          <br>
+        </div>
+      </div>
+      <div id ="aboutus"  style="display:none;">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div style = "margin: 20px 20px 20px 20px;"> 
+        </br>
+         <p class="info-text text-break"  style="color:white;">We are 2 girlfriends bashing at the keyboard and monitor through suns and moons. 
+            CryptoNeko happened because of a decades-old obsession with the original ManekiNeko combined with the curiosity of blockchain when it was emerging. 
+            Acknowledging people's fears of the volatile market back in the day, we want to let our investors know, we're playing the long game. 
+            We hope you enjoy this sort of game we've set up for trading tokens and increasing value through time and welcome discussion 
+            on discord to add to our community's ideas too! We've applied ourselves not only as creators, but collectors to understand the pros and cons of both sides. 
+            It's important to us that collectors/traders collect benefits as well! Aside from the "practical" financial aspect, we wanted to make something fun, 
+            thoughtful, and worth our time--for all of us! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+     </section>
+
+  
+     <section>
+      <div class="row container-fluid">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center">
+          <img src="images/cryptoneko icon IG.png" id ="btninstagram-b" class="img-fluid" onclick="window.open('https://www.instagram.com/cryptoneko_nft/', '_blank');">         
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center">
+          <img src="images/cryptoneko icon discord.png" id ="btndiscord-b" class="img-fluid" onclick="window.open('https://discord.gg/8ZhNyt4ZQE', '_blank');">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center">
+          <img src="images/cryptoneko icon twitter.png" id ="btntwitter-b" class="img-fluid" onclick="window.open('https://twitter.com/cryptoneko_nft/', '_blank');">  
+        </div>
+        
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center">
+          <img src="images/cryptoneko icon opensea.png" id ="btnopensea-b" class="img-fluid" onclick="window.open('https://opensea.io/collection/cryptoneko-v2', '_blank');">
+        </div>
+   
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="javascripts/contract_web3.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
